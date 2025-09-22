@@ -1,0 +1,28 @@
+funcion s <- pedir_consumo(servicio)
+	definir s como real 
+	Escribir "Ingrese el consumo del ", servicio, " adquirido (en numeros) "
+	leer s
+FinFuncion
+
+funcion total_consumo <- calcular_consumo_total
+	definir total_consumo, s1, s2 como real
+	s1 <- pedir_consumo("servivio 1")
+	s2 <- pedir_consumo("servicio 2")
+	
+	total_consumo <- s1 + s2
+FinFuncion
+
+funcion mostrar_resultado(total_consumo)
+	escribir "El consumo total de los servicios es de: ", total_consumo
+FinFuncion
+
+Algoritmo consumos_funciones
+	
+	Definir total_consumo como real 
+	
+	total_consumo <- calcular_consumo_total
+	
+	mostrar_resultado(total_consumo)
+	
+FinAlgoritmo
+

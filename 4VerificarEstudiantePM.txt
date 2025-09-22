@@ -1,0 +1,22 @@
+Funcion esEstudiante <- Asignar_Valor(verdadero_o_falso)
+        esEstudiante <- Verdadero   
+FinFuncion
+
+Funcion valor <- Obtener_Valor(esEstudiante)
+	valor <- esEstudiante
+FinFuncion
+
+Funcion Mostrar_Mensaje(esEstudiante)
+	Escribir "¿Es usted estudiante? [Verdadero/Falso]: ", esEstudiante
+FinFuncion
+
+Algoritmo VerificarEstudiante
+	
+
+Definir esEstudiante Como Logico
+
+esEstudiante <- Asignar_Valor(Verdadero_o_falso)
+esEstudiante <- Obtener_Valor(esEstudiante)
+Mostrar_Mensaje(esEstudiante)
+
+FinAlgoritmo

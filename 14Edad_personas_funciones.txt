@@ -1,0 +1,35 @@
+Algoritmo Edad_personas_funciones
+    Definir año_Actual Como Entero
+    Definir edad1, edad2, edad3 Como Entero
+    
+
+    año_Actual <- pedir_año_Actual(año_actual)
+
+    edad1 <- calcular_Edad("Persona 1", año_Actual)
+    edad2 <- calcular_Edad("Persona 2", año_Actual)
+    edad3 <- calcular_Edad("Persona 3", año_Actual)
+    
+    mostrar_Resultados(edad1, edad2, edad3)
+FinAlgoritmo
+
+Funcion año <- pedir_año_Actual(año_actual)
+    Definir año Como Entero
+    Escribir "Ingrese el año actual: "
+    Leer año
+FinFuncion
+
+Funcion edad <- calcular_Edad(nombre, actual)
+    Definir nacimiento Como Entero
+    Definir edad Como Entero
+    
+    Escribir "Ingrese el año de nacimiento de ", nombre, ": "
+    Leer nacimiento
+    
+    edad <- actual - nacimiento
+FinFuncion
+
+Funcion mostrar_Resultados(e1, e2, e3)
+    Escribir "Edad de la Persona 1: ", e1, " años"
+    Escribir "Edad de la Persona 2: ", e2, " años"
+    Escribir "Edad de la Persona 3: ", e3, " años"
+FinFuncion

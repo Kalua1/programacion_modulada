@@ -1,0 +1,28 @@
+Algoritmo Convertir_temperatura
+	
+	Definir celcius, fahrenheit como real 
+	
+	celcius <- pedir_celsius (temperatura)
+	fahrenheit <- convertir_fahrenheit (celcius)
+	mostrar_resultados(celcius, fahrenheit)
+	
+FinAlgoritmo
+
+Funcion temp <- pedir_celsius(temperatura)
+	definir temp Como Real
+	Escribir "ingrese la temperatura en celcius "
+	leer temp
+FinFuncion
+
+funcion f <- convertir_fahrenheit(c)
+	definir f como real 
+	f <- (c * 9/5) + 32
+FinFuncion
+
+funcion mostrar_resultados(c, f)
+	Escribir "temperatura en celcius: " c, " °C"
+	Escribir "temperaturaen fahrenheit: " f, " °F"
+	
+FinFuncion
+
+	

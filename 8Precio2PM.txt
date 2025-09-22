@@ -1,0 +1,20 @@
+Funcion precio <- tomar_precio(Precio_articulo)
+	precio <- 19.99
+FinFuncion
+
+Funcion Valor <- definir_precio(precio)
+		valor <- precio 
+FinFuncion
+
+funcion mostrar_precio(precio)
+	Escribir "El precio del articulo es: $" , precio
+FinFuncion
+
+Algoritmo Precio2
+	
+definir precio Como Real
+
+precio <- tomar_precio(Precio_articulo)
+precio <- definir_precio(precio)
+mostrar_precio(precio)
+FinAlgoritmo

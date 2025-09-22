@@ -1,0 +1,30 @@
+Algoritmo Calculo_Descuento
+    Definir precio, descuento, precioFinal Como Real
+    
+    precio <- pedir_Precio(Precio_Producto)
+   
+    descuento <- calcular_Descuento(precio)
+    
+    precioFinal <- precio - descuento
+    
+    mostrar_Resultado(precio, descuento, precio_Final)
+FinAlgoritmo
+
+Funcion valor <- pedir_Precio(Precio_Producto)
+    Definir valor Como Real
+    Escribir "Ingrese el precio de la compra: "
+    Leer valor
+FinFuncion
+
+Funcion d <- calcular_Descuento(base)
+    Definir d, porcentaje Como Real
+    Escribir "Ingrese el porcentaje de descuento (%): "
+    Leer porcentaje
+    d <- base * (porcentaje / 100)
+FinFuncion
+
+Funcion mostrar_Resultado(precio, descuento, precio_final)
+    Escribir "Precio original: $", precio
+    Escribir "Descuento aplicado: $", descuento
+    Escribir "Precio final a pagar: $", precio_final
+FinFuncion

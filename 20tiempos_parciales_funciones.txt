@@ -1,0 +1,29 @@
+Funcion t <- pedir_Tiempo(tramo)
+    Definir t Como Real
+    Escribir "Ingrese el tiempo del ", tramo, " (en horas): "
+    Leer t
+FinFuncion
+
+Funcion total <- calcular_Tiempo_Total
+    Definir total, t1, t2 Como Real
+    
+    t1 <- pedir_Tiempo("viaje 1")
+    t2 <- pedir_Tiempo("viaje 2")
+    
+    total <- t1 + t2
+FinFuncion
+
+Funcion mostrar_Resultado(total)
+
+    Escribir "El tiempo total de viaje es: ", total, " horas"
+FinFuncion
+
+
+Algoritmo tiempos_parciales
+	
+    Definir total Como Real
+	
+    total <- calcular_Tiempo_Total
+    
+    mostrar_Resultado(total)
+FinAlgoritmo

@@ -1,0 +1,38 @@
+Funcion d <- pedir_distancia(nombre)
+	definir d como real
+	Escribir "Ingrese la distancia recorrida por " nombre, "(km) :"
+	leer d
+FinFuncion
+
+funcion t <- pedir_tiempo(nombre)
+	definir t Como Real
+	Escribir "Ingrese el tiempo recorrido por " nombre, "(horas):"
+	leer t
+FinFuncion
+
+funcion v <- calcular_velocidad(d,t)
+	definir v Como Real
+	v <- d / t
+FinFuncion
+
+funcion mostrar_resultados(v1, v2)
+	escribir "la velocidad promedio del carro 1 es: " v1, "km/h"
+	escribir "la velocidad promedio del carro 2 es: " v2, "km/h"
+	
+FinFuncion
+
+Algoritmo velocidad_carros_funciones
+	
+	Definir d1,t1, v1 Como Real
+	definir d2, t2, v2 Como Real
+	
+	d1 <- pedir_distancia ("carro 1")
+	t1 <- pedir_tiempo ("carro 1")
+	v1 <- calcular_velocidad (d1, t1)
+	
+	d2 <- pedir_distancia ("carro 2")
+	t2 <- pedir_tiempo ("carro")
+	v2 <- calcular_velocidad (d1, d2)
+	
+	mostrar_resultados(v1, v2)
+FinAlgoritmo

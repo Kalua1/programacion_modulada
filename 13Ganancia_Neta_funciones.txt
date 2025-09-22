@@ -1,0 +1,35 @@
+Algoritmo Ganancia_Neta_funciones
+    Definir ingresos, gastos, ganancia Como Real
+
+    ingresos <- pedir_Ingresos(ingresos)
+    
+    gastos <- pedir_Gastos(gastos)
+    
+    ganancia <- calcular_Ganancia(ingresos, gastos)
+    
+    mostrar_Resultado(ingresos, gastos, ganancia)
+	
+FinAlgoritmo
+
+Funcion ing <- pedir_Ingresos(ingresos)
+    Definir ing como real
+    Escribir "Ingrese el total de ingresos: "
+    Leer ing
+FinFuncion
+
+Funcion gas <- pedir_Gastos(gastos)
+    Definir gas Como Real
+    Escribir "Ingrese el total de gastos: "
+    Leer gas
+FinFuncion
+
+Funcion neta <- calcular_Ganancia(ing, gas)
+    Definir neta Como Real
+    neta <- ing - gas
+FinFuncion
+
+Funcion mostrar_Resultado(ing, gas, neta)
+    Escribir "Ingresos: $", ing
+    Escribir "Gastos: $", gas
+    Escribir "Ganancia Neta: $", neta
+FinFuncion

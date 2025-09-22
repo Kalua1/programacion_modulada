@@ -1,0 +1,28 @@
+Algoritmo suma5
+	Definir suma Como Entero
+	
+	suma <- sumar_valores(_)
+
+	mostrar_suma(suma)
+FinAlgoritmo
+
+
+Funcion suma_parcial <- tomar_valores(_)
+	Definir valor Como Entero
+	Escribir "Ingrese un número:"
+	Leer valor
+	suma_parcial <- valor
+FinFuncion
+
+Funcion total <- sumar_valores(_)
+	Definir i, suma Como Entero
+	suma <- 0
+	Para i <- 1 Hasta 5 Hacer
+			suma <- suma + tomar_valores(_)
+	FinPara
+	total <- suma
+FinFuncion
+
+Funcion mostrar_suma(suma)
+	Escribir "La suma de los 5 valores es: ", suma
+FinFuncion

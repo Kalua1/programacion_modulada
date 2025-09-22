@@ -1,0 +1,34 @@
+Algoritmo horas_por_tarifa_funciones
+	
+	Definir horas, tarifa, total Como Real
+	
+	horas <- pedir_horas(horas)
+	tarifa <- pedir_tarifa(tarifa)
+	total <- calcular_costo(horas, tarifa)
+	mostrar_resultado(horas, tarifa, total)
+	
+FinAlgoritmo
+	
+Funcion h <- pedir_horas(horas)
+	definir h como real 
+		Escribir "Ingrese el total de horas trabajadas :"
+		leer h
+FinFuncion
+	
+Funcion t <- pedir_tarifa(tarifa)
+	definir t como real
+	Escribir "Ingrese la tarifa por hora :"
+	leer t
+FinFuncion
+
+Funcion c <- calcular_costo(h, t)
+	Definir c Como Real
+	c <- h * t
+FinFuncion
+
+Funcion mostrar_resultado (h, t, c)
+	Escribir "Total de horas trabajadas: " h
+	Escribir "Tarifa por hora: " t
+	Escribir "Costo total: " c
+FinFuncion
+	

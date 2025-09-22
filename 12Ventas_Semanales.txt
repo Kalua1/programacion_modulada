@@ -1,0 +1,29 @@
+Algoritmo Ventas_Semanales
+    Definir total_Ventas Como Real
+    
+    total_Ventas <- calcular_Total_Ventas(ventas_Semana)
+    mostrarResultado(total_Ventas)
+FinAlgoritmo
+
+
+Funcion venta <- pedir_Venta(dia)
+    Definir venta Como Real
+    Escribir "Ingrese el total de ventas del ", dia, ": "
+    Leer venta
+FinFuncion
+
+Funcion total <- calcular_Total_Ventas(ventas_Semana)
+    Definir total, v1, v2, v3, v4, v5, v6, v7 Como Real
+    
+    v1 <- pedir_Venta (Lunes)
+    v2 <- pedir_Venta (Martes)
+	v3 <- pedir_Venta (Miércoles)
+    v4 <- pedir_Venta (Jueves)
+    v5 <- pedir_Venta (Viernes)
+    
+    total <- v1 + v2 + v3 + v4 + v5
+FinFuncion
+
+Funcion mostrarResultado(total)
+    Escribir "El total de ventas de la semana es: $", total
+FinFuncion

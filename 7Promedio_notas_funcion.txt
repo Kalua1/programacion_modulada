@@ -1,0 +1,27 @@
+Algoritmo Promedio_notas
+    Definir promedio Como Real
+    
+    promedio <- calcularPromedio(notas)
+    mostrar_Promedio(promedio)
+	
+FinAlgoritmo
+
+Funcion nota <- pedir_Nota (materia)
+    Definir nota Como Real
+    Escribir "Ingrese la nota de ", materia, ": "
+    Leer nota
+FinFuncion
+
+Funcion promedio <- calcularPromedio(notas)
+    Definir n1, n2, n3 Como Real
+    
+    n1 <- pedir_Nota("Matemáticas")
+    n2 <- pedir_Nota("Lengua")
+    n3 <- pedir_Nota("Ciencias")
+    
+    promedio <- (n1 + n2 + n3) / 3
+FinFuncion
+
+Funcion mostrar_Promedio(promedio)
+    Escribir "El promedio de las tres materias es: ", promedio
+FinFuncion

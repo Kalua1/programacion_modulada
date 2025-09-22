@@ -1,0 +1,46 @@
+funcion u <- pedir_unidades(nombre)
+	definir u como real 
+	Escribir "Ingrese el total de unidades vendidas  de :" nombre, ":"
+	leer u
+FinFuncion
+
+funcion p <- pedir_precio(nombre)
+	definir p como real 
+	escribir "Ingrese el precio unitario del :" nombre, ":"
+	leer p
+FinFuncion
+
+funcion s <- calcular_subtotal(unidades, precio)
+	definir s como real 
+	s <- unidades * precio
+FinFuncion
+
+funcion mostrar_resultados (s1, s2, s3, total)
+	Escribir "Subtotal producto 1: $" s1
+	Escribir "Subtotal producto 2: $" s2
+	Escribir "Subtotal producto 3: $" s3
+	Escribir "Total a pagar : $" total
+FinFuncion
+
+Algoritmo ventas_prodcutos3_funciones
+	
+	definir u1, p1, s1 como real
+	definir u2, p2, s2 Como Real
+	definir u3, p3, s3 Como Real
+	
+	u1 <- pedir_unidades ("prodcuto 1")
+	p1 <- pedir_precio ("producto 1")
+	s1 <- calcular_subtotal (u1, p1)
+	
+	u2 <- pedir_unidades ("prodcuto 2")
+	p2 <- pedir_precio ("producto 2")
+	s2 <- calcular_subtotal (u1, p1)
+	
+	u3 <- pedir_unidades ("prodcuto 3")
+	p3 <- pedir_precio ("producto 3")
+	s3 <- calcular_subtotal (u1, p1)
+	
+	total <- s1 + s2 + s3
+	
+	mostrar_resultados(s1, s2, s3, total)
+FinAlgoritmo

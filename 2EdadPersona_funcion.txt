@@ -1,0 +1,20 @@
+Algoritmo EdadPersona
+    Definir edad Como Entero
+    
+    edad <- asignarEdad(edad)
+    mostrarEdad(edad)
+FinAlgoritmo
+
+Funcion valor <- asignarEdad(edad)
+    Definir valor Como Entero
+    valor <- obtenerEdad(edad)
+FinFuncion
+
+Funcion numero <- obtenerEdad(edad)
+    Definir numero Como Entero
+    numero <- 20
+FinFuncion
+
+Funcion mostrarEdad(num)
+    Escribir "Tienes ", num, " años"
+FinFuncion

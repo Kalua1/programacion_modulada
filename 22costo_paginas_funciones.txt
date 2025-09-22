@@ -1,0 +1,29 @@
+funcion paginas <- pedir_numero_de_paginas
+	definir paginas como entero
+	Escribir "Ingrese el numero de paginas para imprimir"
+	leer paginas
+FinFuncion
+
+funcion precio <- pedir_precio_por_paginas
+	definir precio como real
+	escribir "Ingrese el precio por pagina"
+	leer precio
+FinFuncion
+
+funcion total <- calcular_costo_total(paginas, precio)
+	definir total como real
+	total <- paginas * precio
+FinFuncion
+
+algoritmo costo_paginas_funciones
+	
+	definir paginas, precio_por_pagina, costo_total Como Real
+	
+	paginas <- pedir_numero_de_paginas
+	precio_por_pagina <- pedir_precio_por_paginas
+	costo_total <- calcular_costo_total(paginas, precio_por_pagina)
+	
+	escribir "El costo total de impresion es de: " costo_total
+	
+FinAlgoritmo
+	

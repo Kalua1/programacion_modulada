@@ -1,0 +1,45 @@
+Algoritmo Calculo_Factura
+    Definir precio_Unitario, cantidad, subtotal, iva, total Como Real
+
+    precio_Unitario <- pedir_Precio(precio_prodcuto)
+    cantidad <- pedir_Cantidad(cantidad_producto)
+    
+
+    subtotal <- calcular_Subtotal(precio_Unitario, cantidad)
+    
+    iva <- calcular_IVA(subtotal)
+    
+    total <- subtotal + iva
+    
+    mostrar_Factura(precio_Unitario, cantidad, subtotal, iva, total)
+FinAlgoritmo
+
+Funcion precio <- pedir_Precio(precio_Producto)
+    Definir precio Como Real
+    Escribir "Ingrese el precio unitario: "
+    Leer precio
+FinFuncion
+
+Funcion cant <- pedir_Cantidad(cantidad_Producto)
+    Definir cant Como Real
+    Escribir "Ingrese la cantidad: "
+    Leer cant
+FinFuncion
+
+Funcion sub <- calcular_Subtotal(precio, cantidad)
+    Definir sub Como Real
+    sub <- precio * cantidad
+FinFuncion
+
+Funcion impuesto <- calcular_IVA(base)
+    Definir impuesto Como Real
+    impuesto <- base * 0.19
+FinFuncion
+
+Funcion mostrar_Factura(precio, cantidad, subtotal, impuesto, total)
+    Escribir "Precio unitario: $", precio
+    Escribir "Cantidad: ", cantidad
+    Escribir "Subtotal: $", subtotal
+    Escribir "IVA (19%): $", impuesto
+    Escribir "TOTAL A PAGAR: $", total
+FinFuncion

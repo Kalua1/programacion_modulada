@@ -1,0 +1,34 @@
+Algoritmo calorias_semana
+	
+	definir total_semana Como Real
+	
+	total_semana <- calcular_total_semana(dias_semana)
+	mostrar_resultados(total_semana)
+	
+FinAlgoritmo
+	
+	funcion cal <- pedir_calorias(dia)
+		Definir cal como real
+		Escribir "Ingrese las calorias consumidas el " dia, ": "
+		leer cal
+FinFuncion
+
+
+funcion total <- calcular_total_semana(dias_semana)
+	Definir total Como Real
+	definir lunes, martes, miercoles, jueves, viernes, sabado, domingo Como Real
+	lunes <- pedir_calorias("lunes")
+	martes <- pedir_calorias("martes")
+	miercoles <- pedir_calorias("miercoles")
+	jueves <- pedir_calorias("jueves")
+	viernes <- pedir_calorias("viernes")
+	sabado <- pedir_calorias("sabado")
+	domingo <- pedir_calorias("domingo")
+	
+	total <- lunes + martes + miercoles + jueves + viernes + sabado + domingo
+	FinFuncion
+	
+	funcion mostrar_resultados(total)
+		Escribir "El total de calorias consumidas en la semana es de: " total
+FinFuncion
+		

@@ -1,0 +1,38 @@
+Algoritmo IMC_funciones
+	
+	Definir peso1, altura1, imc1 Como Real
+	Definir peso2, altura2, imc2 como real
+	
+	peso1 <- pedir_peso("persona 1")
+	altura1 <- pedir_altura("persona 1")
+	imc1 <- calcular_imc(peso1, altura1)
+	
+	peso2 <- pedir_peso ("persona 2")
+	altura2 <- pedir_altura("persona 2")
+	imc2 <- calcular_imc(peso2, altura2)
+	
+	mostrar_resultados(imc1, imc2)
+	
+FinAlgoritmo
+
+funcion p <- pedir_peso(nombre)
+	definir p Como Real
+	Escribir "Ingrese el peso de :" nombre "(kg)"
+	leer p
+FinFuncion
+
+funcion a <- pedir_altura(nombre)
+	definir a Como Real
+	Escribir "Ingrese la altura de :" nombre "(m)"
+	leer  a 
+FinFuncion
+
+Funcion imc <- calcular_imc(peso, altura)
+	definir imc Como Real
+	imc <- peso / (altura ^ 2)
+FinFuncion
+
+Funcion mostrar_resultados(i1, i2)
+	Escribir "IMC de la persona 1: " i1
+	Escribir "IMC de la persona 2: " i2
+FinFuncion

@@ -1,0 +1,34 @@
+Algoritmo Area_Rectangulo
+    Definir base, altura, area Como Real
+    
+    base <- pedirBase(numero)
+    altura <- pedir_Altura(numero)
+    
+    area <- calcular_Area(base, altura)
+    
+    mostrar_Resultado(base, altura, area)
+FinAlgoritmo
+
+Funcion b <- pedirBase(numero)
+    Definir b Como Real
+    Escribir "Ingrese la base del rectangulo: "
+    Leer b
+FinFuncion
+
+Funcion h <- pedir_Altura(numero)
+    Definir h Como Real
+    Escribir "Ingrese la altura del rectangulo: "
+    Leer h
+FinFuncion
+
+Funcion a <- calcular_Area(b, h)
+    Definir a Como Real
+    a <- b * h
+FinFuncion
+
+
+Funcion mostrar_Resultado(b, h, a)
+    Escribir "Base: ", b
+    Escribir "Altura: ", h
+    Escribir "El área del rectangulo es: ", a
+FinFuncion
